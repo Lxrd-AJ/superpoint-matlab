@@ -1,0 +1,15 @@
+function varargout = pyAtenNorm(varargin)
+% Placeholder function for pyAtenNorm.
+
+% Other parameters in `varargin{2:end}` are the parameters of the pytorch
+% call `torch.norm(descriptor, p=2, dim=1)`
+inputTensor = varargin{1}; % [1×256×60×80 dlarray] -> BxCxSxS
+descriptor = extractdata(inputTensor.value);
+
+% Reimplement norm
+sumSqDesc = 
+
+% Assign the norm into varargout
+
+error(message('nnet_cnn_pytorchconverter:pytorchconverter:PlaceholderFunction', 'pyAtenNorm'));
+end
